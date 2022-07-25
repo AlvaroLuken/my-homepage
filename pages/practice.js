@@ -5,7 +5,6 @@ import Paragraph from '../components/paragraph';
 import { GridItemPractice } from '../components/grid-item-practice';
 import todolist from '../public/images/todolist.png';
 import add4 from '../public/images/add4.png';
-import NextLink from 'next/link';
 
 const Practice = () => (
   <Layout title="Practice">

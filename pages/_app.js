@@ -12,7 +12,7 @@ const Website = ({ Component, pageProps, router }) => {
       <Layout router={router}>
         <AnimatePresence exitBeforeEnter initial={true}>
           <Head>
-            <title>Al's Homepage</title>
+            <title>Al&apos;s Homepage</title>
             <link rel="icon" href="images/punk6068.png" />
           </Head>
           <Component {...pageProps} key={router.route} />

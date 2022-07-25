@@ -8,7 +8,7 @@ import mooncat3 from '../public/images/mooncat3.png';
 
 const Projects = () => {
   return (
-    <Layout title="Projcts">
+    <Layout title="Projects">
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
           Projects

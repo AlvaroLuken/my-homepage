@@ -10,10 +10,10 @@ const Projects = () => {
   return (
     <Layout title="Projects">
       <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading mt={4} as="h3" fontSize={20} mb={4}>
           Projects
         </Heading>
-
+        <Divider mb={4} />
         <SimpleGrid columns={[1, 2, 3]} gap={6}>
           <Section delay={0.3}>
             <ProjectGridItem id="mooncat1" title="Mooncat1" thumbnail={mooncat1}>

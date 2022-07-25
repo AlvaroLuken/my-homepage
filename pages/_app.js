@@ -3,6 +3,7 @@ import Layout from '../components/layouts/main';
 import theme from '../lib/theme';
 import Fonts from '../components/fonts';
 import { AnimatePresence } from 'framer-motion';
+import Head from 'next/head';
 
 const Website = ({ Component, pageProps, router }) => {
   return (
@@ -10,6 +11,10 @@ const Website = ({ Component, pageProps, router }) => {
       <Fonts />
       <Layout router={router}>
         <AnimatePresence exitBeforeEnter initial={true}>
+          <Head>
+            <title>Al's Homepage</title>
+            <link rel="icon" href="images/punk6068.png" />
+          </Head>
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </Layout>

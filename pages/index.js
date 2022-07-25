@@ -1,19 +1,18 @@
-import { Container, Link, Button, Box, Heading, Image, useColorModeValue, Icon, List, ListItem, SimpleGrid } from '@chakra-ui/react';
+import { Container, Link, Button, Box, Heading, Image, useColorModeValue, Icon, List, ListItem } from '@chakra-ui/react';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/bio';
-import { GridItem } from '../components/grid-item';
 import Layout from '../components/layouts/article';
-import { IoLogoTwitter, IoLogoGithub, IoLogoDiscord } from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5';
 
 const Page = () => {
   return (
     <Layout>
       <Container>
         <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-          Hello, I'm a software developer based in San Francisco! 👋
+          Hello, I&apos;m a software developer based in San Francisco! 👋
         </Box>
 
         <Box display={{md:'flex'}}>
@@ -60,7 +59,7 @@ const Page = () => {
             <BioYear>
               2020
             </BioYear>
-            Graduated from New York University with a Bachelor's in Computer Science.
+            Graduated from New York University with a Bachelor&apos;s in Computer Science.
           </BioSection>
           <BioSection>
             <BioYear>
@@ -72,7 +71,7 @@ const Page = () => {
             <BioYear>
               2021-present
             </BioYear>
-            Taught smart contract development as the lead instructor of ChainShot's Ethereum developer bootcamp.
+            Taught smart contract development as the lead instructor of ChainShot&apos;s Ethereum developer bootcamp.
           </BioSection>
         </Section>
 

@@ -1,9 +1,6 @@
 import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
-
 import Section from '../components/section';
-
 import { WorkGridItem } from '../components/grid-item';
-
 import mooncat1 from '../public/images/mooncat1.png';
 import mooncat2 from '../public/images/mooncat2.png';
 import mooncat3 from '../public/images/mooncat3.png';

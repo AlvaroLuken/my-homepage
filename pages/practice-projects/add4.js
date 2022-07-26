@@ -1,5 +1,6 @@
 import { Box, Button, Input, Heading, List, ListItem, Text } from '@chakra-ui/react';
 import React from 'react';
+import Layout from '../../components/layouts/article';
 
 const Add4 = () => {
   const [number, setNumber] = React.useState(0);
@@ -22,7 +23,7 @@ const Add4 = () => {
   }
 
   return (
-    <Box>
+    <Layout>
       <Heading as="h3" mt={4} mb={2}>Sum 4 Endlessly!</Heading>
       <Input mt={10} mb={4} value={number} onChange={handleInput} />
       <Button onClick={() => add4(number)}>Add 4!</Button>
@@ -36,9 +37,12 @@ const Add4 = () => {
         </ListItem>
         <ListItem>
           - Crypto functions! (ie: generate your own btc/eth address)
-        </ListItem>      
+        </ListItem>
+        <ListItem>
+          - Add a better looking error message for when user inputs bad input
+        </ListItem>    
       </List>
-    </Box>
+    </Layout>
   )
 }
 

@@ -1,6 +1,7 @@
 import { Box, Text, Center, List, ListItem, Button, Input, Heading, FormControl, FormLabel, useColorModeValue } from '@chakra-ui/react';
 import { useState } from 'react';
 import { DeleteIcon } from '@chakra-ui/icons';
+import Layout from '../../components/layouts/article';
 
 const ToDoList = () => {
   const [userInput, setUserInput] = useState('');
@@ -34,7 +35,7 @@ const ToDoList = () => {
   }
 
   return (
-    <Box>
+    <Layout>
       <Heading as="h1" mt={4} mb={8}>
         Next JS To-Do List
       </Heading>
@@ -86,7 +87,7 @@ const ToDoList = () => {
           - Persistence! Local db.
         </ListItem>        
       </List>
-    </Box>
+    </Layout>
   )
 }
 

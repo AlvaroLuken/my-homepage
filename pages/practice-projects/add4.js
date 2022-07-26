@@ -29,7 +29,7 @@ const Add4 = () => {
       <Box textAlign="center" mt={4} fontSize={18}>
         The sum is {sum}.
       </Box>
-      <Text>Features to Add:</Text>
+      <Text mt={24}>Features to Add:</Text>
       <List>
         <ListItem>
           - More math functions (ie: get square root of num)

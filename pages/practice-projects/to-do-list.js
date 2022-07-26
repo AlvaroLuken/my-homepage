@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { DeleteIcon } from '@chakra-ui/icons';
 
 const ToDoList = () => {
-  
   const [userInput, setUserInput] = useState('');
   const [list, setList] = useState([]);
 
@@ -39,14 +38,14 @@ const ToDoList = () => {
       <Heading as="h1" mt={4} mb={8}>
         Next JS To-Do List
       </Heading>
-      <List align="center">
+      <List style={{alignItems: 'center', display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
         {
           list.length >= 1 ? list.map((todoItem, idx) => {
             return <ListItem 
               style={{
                 display: 'flex',
+                width: "50%",
                 justifyContent: 'space-between',
-                border: ".8px solid #bfbfbf",
                 borderRadius: "5.9px"}}
                 m={6}
                 key={idx}>
@@ -60,16 +59,16 @@ const ToDoList = () => {
         }
       </List>
       <FormControl>
-        <FormLabel mt={4} textAlign="center">Add Item To List</FormLabel>
+        <FormLabel mt={4} textAlign="center"></FormLabel>
           <Input
-          placeholder='Enter your to-do...'
+          placeholder='Enter an item to add...'
           value={userInput}
           bg={useColorModeValue('#ffffff40', 'gray200')}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
           />
           <Center>
-            <Button text-align="center" mt={4} onClick={handleSubmit}>Add Item</Button>
+            <Button mt={4} onClick={handleSubmit}>Add Item</Button>
           </Center>
       </FormControl>
       <Text>Features to Add:</Text>
@@ -78,7 +77,7 @@ const ToDoList = () => {
           - MetaMask admin so that only myself and trusted addresses can add items
         </ListItem>
         <ListItem>
-          - Proper spacing between item container and contents
+          - Proper spacing between item container and contents [x]
         </ListItem>
         <ListItem>
           - Edit button on individual items

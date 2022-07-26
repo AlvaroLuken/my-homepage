@@ -42,8 +42,15 @@ const ToDoList = () => {
       <List align="center">
         {
           list.length >= 1 ? list.map((todoItem, idx) => {
-            return <ListItem m={6} key={idx}>
-              {todoItem}<Button ml={8} onClick={(e) => {
+            return <ListItem 
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                border: ".8px solid #bfbfbf",
+                borderRadius: "5.9px"}}
+                m={6}
+                key={idx}>
+              <Text noOfLines={1} p={2}>{todoItem}</Text><Button ml={8} onClick={(e) => {
                 e.preventDefault()
                 handleDelete(todoItem)
               }}><DeleteIcon color="red" /></Button>
@@ -58,7 +65,6 @@ const ToDoList = () => {
           placeholder='Enter your to-do...'
           value={userInput}
           bg={useColorModeValue('#ffffff40', 'gray200')}
-          borderColor={'gray200'}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
           />

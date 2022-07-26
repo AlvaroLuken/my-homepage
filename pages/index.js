@@ -5,13 +5,13 @@ import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
-import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 
 const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
+        <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mt={2} mb={6} align="center">
           Hello, I&apos;m a software developer based in San Francisco! 👋
         </Box>
 
@@ -92,6 +92,13 @@ const Page = () => {
             On the web
           </Heading>
           <List>
+          <ListItem>
+              <Link href="https://twitter.com/AlvaroLuken" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter} />}>
+                  @AlvaroLuken
+                </Button>
+              </Link>
+            </ListItem>
             <ListItem>
               <Link href="https://github.com/AlvaroLuken" target="_blank">
                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
@@ -100,8 +107,8 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://twitter.com/AlvaroLuken" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter} />}>
+              <Link href="https://linkedin/in/alvaro-luken/" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoLinkedin} />}>
                   @AlvaroLuken
                 </Button>
               </Link>

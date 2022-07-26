@@ -71,7 +71,7 @@ const ToDoList = () => {
             <Button mt={4} onClick={handleSubmit}>Add Item</Button>
           </Center>
       </FormControl>
-      <Text>Features to Add:</Text>
+      <Text mt={24}>Features to Add:</Text>
       <List>
         <ListItem>
           - MetaMask admin so that only myself and trusted addresses can add items

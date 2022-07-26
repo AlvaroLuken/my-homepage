@@ -1,4 +1,4 @@
-import { Box, Text, Center, List, ListItem, Button, Input, Heading, FormControl, FormLabel, useColorModeValue } from '@chakra-ui/react';
+import { Text, Center, List, ListItem, Button, Input, Heading, FormControl, FormLabel, useColorModeValue } from '@chakra-ui/react';
 import { useState } from 'react';
 import { DeleteIcon } from '@chakra-ui/icons';
 import Layout from '../../components/layouts/article';

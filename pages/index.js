@@ -51,12 +51,6 @@ const Page = () => {
           </Heading>
           <BioSection>
             <BioYear>
-              1997
-            </BioYear>
-            Born in San Diego, California.
-          </BioSection>
-          <BioSection>
-            <BioYear>
               2020
             </BioYear>
             Graduated from New York University with a Bachelor&apos;s in Computer Science.

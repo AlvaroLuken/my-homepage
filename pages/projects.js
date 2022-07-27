@@ -11,7 +11,7 @@ const Projects = () => {
     <Layout title="Projects">
       <Container>
         <Heading mt={4} as="h3" fontSize={20} mb={4}>
-          Projects
+          Projects - Under Development!
         </Heading>
         <Divider mb={4} />
         <SimpleGrid columns={[1, 2, 3]} gap={6}>

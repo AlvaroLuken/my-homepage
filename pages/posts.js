@@ -8,7 +8,7 @@ const Posts = () => (
   <Layout title="Posts">
     <Container>
       <Heading mt={4} as="h4" fontSize={20} mb={4}>
-        My Posts
+        My Posts - Under Development!
       </Heading>
       <Divider mb={4} />
       <Section delay={0.1}>

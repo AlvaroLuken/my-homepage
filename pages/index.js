@@ -1,11 +1,11 @@
-import { Container, Link, Button, Box, Heading, Image, useColorModeValue, Icon, List, ListItem } from '@chakra-ui/react';
-import Section from '../components/section';
-import Paragraph from '../components/paragraph';
-import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Box, Button, Container, Heading, Icon, Image, Link, List, ListItem, useColorModeValue } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
 import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
-import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+import Paragraph from '../components/paragraph';
+import Section from '../components/section';
 
 const Page = () => {
   return (
@@ -34,7 +34,7 @@ const Page = () => {
             Al currently works at {' '} 
             <Link href="https://www.alchemy.com/">
               Alchemy
-            </Link>, spearheading crypto education at Web3University. In his personal time, you can find him building apps on the Bitcoin Lightning Network. When he is not coding, he is probably watching a movie or sparring jiu-jitsu.
+            </Link>, spearheading crypto education at <Link href="https://www.alchemy.com/university">Alchemy University</Link>. In his personal time, you can find him building apps on the Bitcoin Lightning Network. When he is not coding, he is probably watching a movie or sparring jiu-jitsu.
           </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects">
@@ -75,7 +75,7 @@ const Page = () => {
           </Heading>
           <Paragraph>
             {' '} 
-            <Link href="https://google.com">
+            <Link href="https://my-nft-museum.vercel.app/">
             NFTs and Collecting Art
             </Link> 🎨, 3D Printing, Playing (Bass, Guitar and Piano) 🎹, Carnivore Diets 🥩, Movies 🎥, Jiu-Jitsu 🥋, Basketball 🏀
           </Paragraph>
@@ -87,9 +87,9 @@ const Page = () => {
           </Heading>
           <List>
           <ListItem>
-              <Link href="https://twitter.com/AlvaroLuken" target="_blank">
+              <Link href="https://twitter.com/lifeofbitcoin" target="_blank">
                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter} />}>
-                  @AlvaroLuken
+                  @lifeofbitcoin
                 </Button>
               </Link>
             </ListItem>

@@ -1,8 +1,8 @@
-import { Container, Heading, Divider, SimpleGrid } from '@chakra-ui/react';
-import Layout from '../components/layouts/article';
-import Section from '../components/section';
-import { GridItem } from '../components/grid-item';
-import bitcoin from '../public/images/bitcoin.png';
+import { Container, Divider, Heading, SimpleGrid } from '@chakra-ui/react'
+import { GridItem } from '../components/grid-item'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import bitcoin from '../public/images/bitcoin.png'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -12,12 +12,12 @@ const Posts = () => (
       </Heading>
       <Divider mb={4} />
       <Section delay={0.1}>
-        <SimpleGrid columns={[1,2,3]} gap={6}>
-          <GridItem title="Why I'm In Crypto" thumbnail={bitcoin} href="https://medium.com"/>
+        <SimpleGrid columns={[1, 2, 3]} gap={6}>
+          <GridItem title="Why I'm In Crypto" thumbnail={bitcoin} />
         </SimpleGrid>
       </Section>
     </Container>
   </Layout>
 )
 
-export default Posts;
+export default Posts

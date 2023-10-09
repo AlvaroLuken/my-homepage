@@ -94,7 +94,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
-            Worked on <Link href="https://www.gm.com/">GM</Link>'s biggest
+            Worked on <Link href="https://www.gm.com/">GM</Link>&apos;s biggest
             assembly line, directly helping manufacture over 30,000 vehicles.
           </BioSection>
           <BioSection>

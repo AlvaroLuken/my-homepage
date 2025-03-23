@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Al's Personal Website",
   "main": "index.js",
-  "engines": {
-    "node": ">=18.x"
-  },
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",

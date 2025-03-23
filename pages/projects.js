@@ -3,6 +3,7 @@ import { ProjectGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import nftMuseumPreview from '../public/images/nft_museum_preview.png'
+import visarelyPunksPreview from '../public/images/visa_preview.png'
 
 const Projects = () => {
   return (
@@ -13,6 +14,15 @@ const Projects = () => {
         </Heading>
         <Divider mb={4} />
         <SimpleGrid columns={[1, 2, 3]} gap={6}>
+        <Section delay={0.3}>
+            <ProjectGridItem
+              id="visarelyPunks"
+              title="Visarely Punks"
+              thumbnail={visarelyPunksPreview}
+            >
+              A collection of 2,000 unique punks that are pseudorandomly generated and stored on-chain.
+            </ProjectGridItem>
+          </Section>
           <Section delay={0.3}>
             <ProjectGridItem
               id="nftMuseum"

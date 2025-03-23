@@ -6,19 +6,18 @@ import { Meta, Title } from '../../components/project'
 
 const Project = () => {
   return (
-    <Layout title="NFT Museum">
+    <Layout title="Visarely Punks">
       <Container>
-        <Title>My Personal Collection of NFTs and Crypto Fine Art</Title>
+        <Title>My Own NFT Collection</Title>
         <P>
-          I enjoy spending adult money on NFTs and crypto art. My goal is to
-          build up a museum-grade collection as I walk through life. See my
+          As a seasoned NFT collector, I always wanted to call myself a collection OWNER. So I took 2 weeks of hardcore development and created Visarely Punks! See my
           collection below... 👇
         </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link target="_blank" href="https://my-nft-museum.vercel.app/" ml="4px">
-              <b>https://my-nft-museum.vercel.app/</b>{' '}
+            <Link target="_blank" href="https://visarelypunks.fun/" ml="4px">
+              <b>https://visarelypunks.fun/</b>{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

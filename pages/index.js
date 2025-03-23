@@ -64,7 +64,7 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Al currently works at{' '}
-            <Link href="https://www.alchemy.com/">Alchemy</Link>, spearheading
+            <Link href="https://www.alchemy.com/">Alchemy</Link> as a Senior DevRel Engineer, spearheading
             crypto education at{' '}
             <Link href="https://www.alchemy.com/university">
               Alchemy University
@@ -109,12 +109,28 @@ const Page = () => {
             </Link>{' '}
           </BioSection>
           <BioSection>
-            <BioYear>2022-current</BioYear>
+            <BioYear>2022-2023</BioYear>
             Product/Education/Community Lead @{' '}
             <Link href="https://university.alchemy.com/">
               Alchemy University
             </Link>
             . DevRel / Full Stack Engineer.
+          </BioSection>
+          <BioSection>
+            <BioYear>2023-2024</BioYear>
+            Senior Ecosystem Growth Manager @{' '}
+            <Link href="https://circle.com/">
+              Circle
+            </Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2024-current</BioYear>
+            Senior DevRel Engineer @{' '}
+            <Link href="https://alchemy.com/">
+              Alchemy
+            </Link>
+            . After spending a year at Circle, I returned to Alchemy to lead the
+            education and developer relations team.
           </BioSection>
         </Section>
 
